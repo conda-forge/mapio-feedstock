@@ -14,12 +14,15 @@ Summary: USGS library for dealing with gridded data (loading, interpolation, etc
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/mapio-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mapio-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/mapio-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/mapio-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mapio/badges/version.svg)](https://anaconda.org/conda-forge/mapio)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mapio/badges/downloads.svg)](https://anaconda.org/conda-forge/mapio)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mapio-green.svg)](https://anaconda.org/conda-forge/mapio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mapio.svg)](https://anaconda.org/conda-forge/mapio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mapio.svg)](https://anaconda.org/conda-forge/mapio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mapio.svg)](https://anaconda.org/conda-forge/mapio) |
 
 Installing mapio
 ================
