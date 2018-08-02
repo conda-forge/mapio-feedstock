@@ -1,4 +1,4 @@
-{% set version = "0.7.11" %}
+{% set version = "0.7.12" %}
 
 package:
   name: mapio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/MapIO/archive/{{ version }}.tar.gz
-  sha256: 26952cc541e7e2d3e1ffc20283fda0643c570cbb37b059b3be00ba7d36a676ca
+  sha256: 2e58f864344c18b03e0e0fd314371ee6b0ba1870a0d3afbf5e47a6adb8b9f387
 
 build:
   number: 0
