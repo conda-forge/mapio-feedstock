@@ -22,6 +22,7 @@ requirements:
     - gdal
     - h5py
     - matplotlib
+    - netcdf4
     - pandas
     - rasterio
     - scipy
