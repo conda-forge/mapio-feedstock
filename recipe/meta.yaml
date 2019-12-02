@@ -1,4 +1,4 @@
-{% set version = "0.7.22" %}
+{% set version = "0.7.23" %}
 
 package:
   name: mapio
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/usgs/MapIO/archive/{{ version }}.tar.gz
-  sha256: 1218f85bc329e929df77f4bcb2905e93f7c45b95108871e0b34fc7d5dc0a1aa0
+  sha256: fcb390be40c55cf0678e4089144b24f5427d4586a40437e98def38f86b152461
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
