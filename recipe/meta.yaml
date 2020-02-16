@@ -9,7 +9,7 @@ source:
   sha256: fcb390be40c55cf0678e4089144b24f5427d4586a40437e98def38f86b152461
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - gdal
     - h5py
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - pandas
     - rasterio
