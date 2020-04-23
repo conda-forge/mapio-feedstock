@@ -1,4 +1,4 @@
-{% set version = "0.7.23" %}
+{% set version = "0.7.24" %}
 
 package:
   name: mapio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/MapIO/archive/{{ version }}.tar.gz
-  sha256: fcb390be40c55cf0678e4089144b24f5427d4586a40437e98def38f86b152461
+  sha256: ce58f76e990b4fe83ff6f778081165be9f1dc7d48052da03f82f3a181fffa1e8
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/usgs/MapIO
   license: Public Domain
-  summary: 'USGS library for dealing with gridded data (loading, interpolation, etc.)'
+  summary: USGS library for dealing with gridded data (loading, interpolation, etc.)
   license_family: Public Domain
   license_file: LICENSE.md
 
