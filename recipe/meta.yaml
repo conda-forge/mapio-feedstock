@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.8.1" %}
 
 package:
   name: mapio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/MapIO/archive/{{ version }}.tar.gz
-  sha256: 2f08d66b8647b53f08aa0f89de6d9c09a5ff8a57b6de7ff3cc5b4108410e373e
+  sha256: 99d88dd1594411373bacaf611184208639bad20b78eeb43cb8bd0714ed3da9ff
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.8
     - pip
   run:
