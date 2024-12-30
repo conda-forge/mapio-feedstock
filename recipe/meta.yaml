@@ -9,16 +9,16 @@ source:
   sha256: 99d88dd1594411373bacaf611184208639bad20b78eeb43cb8bd0714ed3da9ff
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - gdal
     - h5py
     - matplotlib
@@ -30,6 +30,8 @@ requirements:
 
 test:
 
+  requires:
+    - python {{ python_min }}
   imports:
     - mapio
 
