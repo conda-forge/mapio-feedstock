@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  version: "0.8.12"
+
+package:
+  name: mapio
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/m/mapio/mapio-${{ version }}.tar.gz
+  sha256: 2751443eea6ce49823a4ed87ea00b4e7f8bd776a4014a9363967b06d4910c7f3
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=42
+    - wheel
+    - setuptools-scm >=3.4
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - esi-utils-io
+    - geopy
+    - h5py
+    - matplotlib-base
+    - netcdf4 >=1.7.2
+    - pyproj
+    - rasterio
+    - scipy
+    - shapely
+
+tests:
+  - python:
+      imports:
+        - mapio
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Reading/resampling of raster files (esp. across 180 meridian)
+  license: SL
+  license_file: LICENSE.md
+  homepage: https://pypi.org/project/mapio/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
